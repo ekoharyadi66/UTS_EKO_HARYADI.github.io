@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Akshar:wght@500&family=Inter:wght@200;300;400;500&family=Macondo&family=Montserrat:ital,wght@0,400;1,100&family=Noto+Sans+JP:wght@100&family=Radio+Canada&display=swap"
+    rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lampung Paradise</title>
+  <link rel="icon" href="img/jadi/Question-Mark-Emoji.jpg">
+
+  <link rel="stylesheet" type="text/css" href="">
+  <style>
+    img {
+      width: 900px;
+      height: 450px;
+    }
+
+    * {
+      font-family: 'Akshar', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar-fixed">
+    <nav class=" deep-purple darken-4">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#home" class="brand-logo">Lampung Paradise</a>
+          <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="KumpulanProjek.html">Kumpulan Projek</a></li>
+            <li><a href="Biodata.html">Biodata Saya</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <!-- sidenav -->
+  <ul class="sidenav" id="mobile-nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="KumpulanProjek.html">Kumpulan Projek</a></li>
+    <li><a href="Biodata.html">Biodata Saya</a></li>
+  </ul>
+
+  <!-- content -->
+  <section id="section" class="section lighten-4">
+    <div class="container">
+      <div class="row">
+        <!-- <p class="center"> Destinasi </p> -->
+        <h3 class="center">Pantai Sari Ringgung</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- isi -->
+  <section>
+    <div class="card-panel z-depth-2">
+      <div class="container">
+        <div class="center">
+          <img src="img/jadi/Perahu.jpg">
+          <article>
+            <h4 class="center">Rute Menuju Pantai Sari Ringgung</h4>
+            <p>Rute menuju Pantai Sari Ringgung dari Bandar Lampung dengan menuju ke arah Padang Cermin, kamu akan
+              menemukan petunjuk jalan yang menunjukkan pantai-pantai yang ada.</p>
+            <p>Untuk menuju Pantai Sari Ringgung dapat dengan menggunakan angkutan umum, seperti angkutan pedesaan atau
+              ojeg. Jika hendak menggunakan angkot daru Terminal Rajabasa yang mengarah ke Ramayana.</p>
+            <h5 class="center">Tiket Pantai Sari Ringgung</h5>
+            <ul>
+              <li>- Tiket masuk Pantai Sari Ringgung cukup dengan membayar Rp. 20.000,- per orang.</li>
+              <li>- Parkir motor sebesar Rp. 5.000,-</li>
+              <li>- Dan Rp. 10.000,- untuk parkir mobil.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- footer -->
+
+  <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Universitas Teknokrat Indonesia</h5>
+          <p class="grey-text text-lighten-4">Address: Jl. ZA. Pagar Alam No.9 -11 35149 Bandar Lampung Lampung</p>
+          <p>Email : eko_haryadi@teknokrat.ac.id</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Menu</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
+            <li><a class="grey-text text-lighten-3" href="KumpulanProjek.html">Kumpulan Projek</a></li>
+            <li><a class="grey-text text-lighten-3" href="Biodata.html">Biodata Saya</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+      <div class="container">
+        <p class="grey-text text-lighten-5 center">
+          Copyright &copy; 2022 <a href="https://spada.teknokrat.ac.id/"> WisataLampung.com</a></p>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    const sideNav = document.querySelectorAll('.sidenav');
+    M.Sidenav.init(sideNav);
+
+    const slider = document.querySelectorAll('.slider');
+    M.Slider.init(slider, {
+      indicators: false,
+      transition: 600,
+      interval: 3000
+    });
+    const materialbox = document.querySelectorAll('.materialboxed');
+    M.Materialbox.init(materialbox);
+
+    const scroll = document.querySelectorAll('.scrollspy');
+    M.ScrollSpy.init(scroll, {
+      scrollOffset: 50
+    })
+  </script>
+</body>
